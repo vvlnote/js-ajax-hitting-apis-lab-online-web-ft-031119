@@ -1,6 +1,6 @@
 // your code here
 
-const username;
+var username = "";
 function getRepositories() {
   username = document.getElementById("username").value;
   const req = new XMLHttpRequest();
