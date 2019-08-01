@@ -13,7 +13,6 @@ function getRepositories() {
 function displayRepositories() {
   let repos = JSON.parse(this.responseText);
   const repoList = `<ul>${repos.map(r =>
-    debugger;
     '<li>' +
     r.name +
     ' - <a href="#" data-repo="' +
@@ -36,7 +35,7 @@ function displayRepositories() {
   //     '</li>').join('')}</ul>`;
   // document.getElementById("repositories").innerHTML += repoList_1;
 }
-
+//GET /repos/:owner/:repo/commits
 function getCommits(el) {
   debugger;
   console.log(el.dataset.repo);
